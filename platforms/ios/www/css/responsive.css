@@ -1,0 +1,389 @@
+/* -----------              RESPONSIVENESS              ----------- */
+
+/* ----------- iPad 1 and 2 and Mini ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  and (orientation: portrait)  
+  and (-webkit-min-device-pixel-ratio: 1) {
+  
+  #countdown p {
+  font-size: 365px;
+  }
+
+
+.cancel_button {
+padding-top: 20px;
+}
+
+.piece {
+ width:172px;
+}
+  
+
+}
+
+/* landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  and (orientation: landscape)  
+  and (-webkit-min-device-pixel-ratio: 1) {
+  
+  #countdown p {
+  font-size: 465px!important;
+  }
+  
+  .piece {
+ width:236px;
+}
+
+}
+
+/* ----------- iPad 3 and 4 Nexus10 ----------- */
+
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1280px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1280px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+
+/* ----------- iPad Pro ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  #countdown p {
+  font-size: 465px;
+  }
+  
+    .piece {
+   width:235px;
+   }
+
+}
+
+/* ----------- iPad Pro ----------- */
+/* landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  #countdown p {
+  font-size: 600px;
+  }
+  
+  .cancel_button {
+   padding-top: 30px;
+   }
+   
+   .piece {
+   width:319px;
+   }
+
+}
+
+
+/* ----------- iPhone 6 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)
+  and (orientation: portrait)  
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  #counter {
+  width: 10px;
+  height: 195px;
+}
+
+.piece {
+    width: 83px;
+}
+  
+
+}
+
+
+/* landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)
+  and (orientation: landscape)  
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  #counter {
+  width: 20px;
+}
+
+.piece {
+    width: 149px;
+}
+  
+
+}
+
+
+/* ----------- iPhone 6 Plus ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px)
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  #counter {
+  width: 15px;
+}
+
+.piece {
+    width: 92px;
+}
+
+}
+
+
+/* landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px)
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  #countdown p {
+  font-size: 310px;
+  }
+  
+  .piece {
+    width: 163px;
+}
+
+}
+
+/* ----------- iPhone 5 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .piece {
+    width: 68px;
+}
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  #counter {
+  width: 20px;
+}
+
+.piece {
+    width: 125px;
+}
+
+
+}
+
+
+
+/* ----------- Nexus 6P ----------- */
+/* Nexus 6P portrait */
+@media only screen 
+  and (min-device-width: 412px) 
+  and (max-device-width: 732px)
+  and (orientation: portrait)  
+  and (-webkit-min-device-pixel-ratio: 1) {
+  
+.piece {
+width:91px;
+}
+
+}
+
+/* Nexus 6P landscape */
+@media only screen 
+  and (min-device-width: 412px) 
+  and (max-device-width: 732px)
+  and (orientation: landscape)  
+  and (-webkit-min-device-pixel-ratio: 1) {
+  
+  #countdown p {
+  font-size: 310px;
+  }
+
+
+}
+
+
+/* ----------- Galaxy S5 ----------- */
+
+
+/* landscape */
+@media only screen 
+  and (min-device-width : 360px) 
+  and (max-device-width : 640px) 
+  and (-webkit-min-device-pixel-ratio : 1) 
+  and (orientation : landscape) { 
+  
+  .piece {
+    width: 142px;
+}
+  
+  
+}
+
+
+
+
+/* ----------- Small ones ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 415px)
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  
+  #counter {
+  width: 15px;
+  right:0px;
+}
+
+}
+
+/* ----------- Galaxy A3 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width : 320px) 
+  and (max-device-width : 480px) 
+  and (-webkit-min-device-pixel-ratio : 1) 
+  and (orientation : portrait) { 
+  
+    #counter {
+  position:fixed;
+  height: 207px;
+right: 10px;
+}
+  
+  
+  .piece {
+    width: 78px;
+}
+  
+  
+}
+
+
+/* landscape */
+@media only screen 
+  and (min-device-width : 259px) 
+  and (max-device-width : 510px) 
+  and (-webkit-min-device-pixel-ratio : 1) 
+  and (orientation : landscape) { 
+  
+  .piece {
+    width: 117px;
+}
+  
+  
+}
+
+
+/* ----------- Nexus7 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 960px)
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+.piece {
+width: 134px;
+}
+}
+
+
+/* ----------- Kindle Fire HD ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 1600px) 
+  and (max-device-width: 2560px)
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  #countdown p {
+  font-size: 510px;
+  }
+
+.piece {
+width: 376px;
+}
+
+}
+
+/* landscape */
+@media only screen 
+  and (min-device-width: 1600px) 
+  and (max-device-width: 2560px)
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  #countdown p {
+  font-size: 1210px;
+  }
+
+.piece {
+width: 594px;
+}
+
+#counter {
+width:60px;
+}
+
+#nummer {
+font-size:30px;
+}
+
+}
+
+
+/* ----------- Tablet 768 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 469px) 
+  and (max-device-width: 768px)
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+.piece {
+width: 171px;
+}
+}
+

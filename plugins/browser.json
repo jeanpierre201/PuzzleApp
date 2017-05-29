@@ -1,0 +1,46 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.phonegap.wagawin"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.phonegap.wagawin"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.phonegap.wagawin"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.phonegap.wagawin"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.phonegap.wagawin"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.phonegap.wagawin"
+        },
+        "org.devgeeks.Canvas2ImagePlugin": {
+            "PACKAGE_NAME": "com.phonegap.wagawin"
+        },
+        "cordova-plugin-save-image": {
+            "PACKAGE_NAME": "com.phonegap.wagawin"
+        },
+        "cordova-save-image-gallery": {
+            "PACKAGE_NAME": "com.phonegap.wagawin"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.phonegap.wagawin"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.phonegap.wagawin"
+        }
+    }
+}

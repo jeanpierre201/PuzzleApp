@@ -1,0 +1,229 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#DCDCDC;
+      background-image:linear-gradient(45deg, #DCDCDC 9%, #DCDCDC 9%);
+    background-image:-webkit-linear-gradient(45deg, #DCDCDC 9%, #DCDCDC 9%);
+    background-image:-ms-linear-gradient(45deg, #DCDCDC 9%, #DCDCDC 9%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.09, #DCDCDC),
+        color-stop(0.09, #DCDCDC)
+    );
+ /* background-attachment:relative; 
+    height:100%; */
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+
+/* *********  1.  Countdown Animation   *****************  */
+
+.background {
+   background-image: url('https://s3-eu-west-1.amazonaws.com/wagawin-ad-platform/media/testmode/banner-landscape.jpg');
+   background-repeat: no-repeat;
+   background-size: 100% auto, cover;
+   width: 100%;
+}
+
+#countdown {
+position: fixed;
+height: 100%;
+margin:0; 
+}
+
+#countdown p {
+    text-align:center;
+    font-size: 165px; 
+    margin: 0;
+    font-weight: normal;
+    color: #FFF;   
+    text-shadow: 2px 2px 2px #333;
+}
+
+.countdown_animation {
+    transform-origin: 50% 50%;
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */ 
+    animation-duration: 1s;
+    animation-name: fadeAndScale;
+    animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+
+@keyframes fadeAndScale {
+    from {
+        opacity: 1;
+        transform: scale(.1, .1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1, 1);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: initial;
+}
+
+.background-gone {
+    background-image: none;
+}
+
+
+/* *********  2.  Puzzle Container   *****************  */
+
+#container_puzzle {
+width: auto;
+position: relative;
+margin:10px;
+}
+
+#puzzle {
+display: inline-grid;
+}
+
+/*
+.puzzle_background {
+   background-image: url('../img/puzzle_background.png');
+   background-repeat: no-repeat;
+   background-size: 100% auto, cover;
+   height: 85%;
+} */
+
+
+.counter_background {
+   background-image: url('../img/counter_background.png');
+   background-repeat: no-repeat;
+   background-size: 100% 100%, cover;
+   height: 85%;
+}   
+
+#counter {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    height: 100%;
+    width: 30px;
+}
+
+.cancel_button {
+width: 100%; 
+padding-top: 5px; 
+padding-bottom: 5px; 
+display:block; 
+margin: auto;
+}
+
+.img-puzzle { 
+width: 100%;
+}
+
+
+/* *********  3.  Timer Animation   *****************  */
+
+#myBar {
+    background-color: #DCDCDC;
+    left: 0px;
+    width: 105%;
+    margin-left: -1px;
+    padding-bottom: 4px;
+    margin-top: -1px;
+}
+
+#nummer {
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 100%;
+    top: 87%;
+    font-size: 10px;
+    font-style: normal;
+}
+
+#myProgress {
+    background-color: #7E96C3;
+    border: 4px;
+    border-style: solid;
+    height: 97%;
+    margin: 0.3mm;
+    border-color: #DCDCDC;
+    border-width: 0.7mm;
+}
+
+
+
+/* *********  3.  Sortable Canvas   *****************  */
+
+
+
+#sortable { list-style-type: none; margin: 0; padding: 0; width: inherit; }
+#sortable li {float: left; background: #DCDCDC; position:relative;}
+
+
+.ui-page-theme-a {
+    background: #DCDCDC!important;
+}
+
+.ui-listview-inset .ui-li-static {
+    border-right-width: 0px!important; 
+    border-left-width: 0px!important; 
+}
+
+.ui-listview .ui-li-static {
+    padding: 0!important;
+    border-width: 0!important; 
+    border-style: none!important; 
+    border-radius:0px!important;
+}
+
+
+body {
+    font-size: 0!important
+}
+
+.piece {
+width:238px;
+}
+
+.element {z-index: 0;}
+.element.being-dragged { background: #0ff; opacity: .5;z-index: 10!important;}
+li.drop-hover .element { opacity: .5; }
+
+
+
+
+

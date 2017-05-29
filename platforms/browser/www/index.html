@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="msapplication-tap-highlight" content="no" /> 
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+  <!-- This is a wide open CSP declaration. To lock this down for production, see below.  -->
+   
+
+
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" />   
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0-alpha.2/jquery.mobile-1.4.0-alpha.2.min.css" />
+ 
+
+
+<!-- Testing Drag and drop  -->
+
+ <!-- (Start) Add the features of jQuery UI sortable -->
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.0-alpha.2/jquery.mobile-1.4.0-alpha.2.min.js"></script> 
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+  <!-- (End) Add the features of jQuery UI sortable -->
+
+<!-- Testing Drag and drop  -->
+
+
+  <title>Web Puzzle Game</title>
+</head>
+
+<body onload="onLoad()">
+
+  <div id="container">
+    <div class="background" id="countdown">
+
+      <p id="timer1"></p>
+      <p id="timer2"></p>
+      <p id="timer3"></p>
+    </div>
+
+    <div class="hidden" id="container_puzzle" >
+    
+      <div id="puzzle">
+      <div id="divcanvas" class="img-puzzle" >
+
+      <ul data-role="listview" data-inset="true" id="sortable">
+      <li id="0"><div class="element a" id="c0"></div></li>
+      <li id="1"><div class="element b" id="c1"></div></li>
+      <li id="2"><div class="element c" id="c2"></div></li>
+      <li id="3"><div class="element d" id="c3"></div></li>
+      <li id="4"><div class="element e" id="c4"></div></li>
+      <li id="5"><div class="element f" id="c5"></div></li>
+      <li id="6"><div class="element g" id="c6"></div></li>
+      <li id="7"><div class="element h" id="c7"></div></li>
+      <li id="8"><div class="element i" id="c8"></div></li>
+      <li id="9"><div class="element j" id="c9"></div></li>
+      <li id="10"><div class="element k" id="c10"></div></li>
+      <li id="11"><div class="element l" id="c11"></div></li>
+      </ul>
+
+      </div>
+
+      </div>   
+    
+
+
+      <div id="counter">
+
+    <div id="close">
+    <img id="button" class="cancel_button"  src="img/cancel_button.png" >                      
+    </div>
+
+    <div class="counter_background" id="myTimer">  
+         <div id="myProgress">
+         <div id="myBar"></div> 
+         </div>
+         <span id="nummer">21</span>           
+    </div>
+ 
+      </div>
+
+    </div>
+
+</div>
+ 
+
+  <!-- SCRIPT -->
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+    app.initialize();
+  </script>
+
+</body>
+
+</html>
