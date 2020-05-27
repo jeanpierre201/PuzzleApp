@@ -70,7 +70,7 @@
     }
   ],
   "devDependencies": {
-    "eslint": "1.10.3",
+    "eslint": "7.1.0",
     "nodemsg": "1.0.0"
   }
 }
